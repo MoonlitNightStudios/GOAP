@@ -22,5 +22,5 @@ The GOAP system plugin is being used in our projects and any improvements we mak
 
 
 # Highlights
-### Graph editor
+
 Extremely modular. This comes with the trade-off of being a bit complicated to get used to.
