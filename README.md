@@ -8,7 +8,7 @@ This plugin is mostly bare bones. It does provide basic goal types though such a
 
 The GOAP system plugin is being used in our projects and any improvements we make to the plugin will reflect here.
 
-##Architecture 
+## Architecture 
 * FGOAPContext: A struct that defines a context for anything in the GOAP system. This is a struct with two members: a tag container for all the relevant context tags for this context and a FGOAPValue property to hold the context value. Every context in the GOAP system is derived from the FGOAPContext struct. The FGOAPContext struct itself is usually sufficient in most cases.
 * FGOAPValue: A struct that defines a value in the GOAP system. Values used in the GOAP system are all derived from the GOAPValue struct.
 * FGOAPGoal: This is a struct that defines a goal for GOAP. The GOAP system allows actions to need "requirements". These are also GOAPGoal structs.
