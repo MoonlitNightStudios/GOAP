@@ -32,7 +32,7 @@ public:
 protected:
 
 	UFUNCTION()
-	void OnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type Result);
+	void OnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type Result) const;
 
 	mutable TMap<UGOAPAgentComponent*, FMobileAgentData> MobileAgents;
 	

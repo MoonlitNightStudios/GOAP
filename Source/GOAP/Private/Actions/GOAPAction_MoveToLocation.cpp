@@ -9,7 +9,6 @@
 #include "LogGOAP.h"
 #include "NavigationSystem.h"
 #include "Chaos/Deformable/MuscleActivationConstraints.h"
-#include "Goals/GOAPSensorGoal.h"
 #include "NavFilters/NavigationQueryFilter.h"
 #include "Navigation/PathFollowingComponent.h"
 
@@ -161,7 +160,7 @@ void UGOAPAction_MoveToLocation::StopAction(UGOAPAgentComponent* Agent, const FI
 	}
 }
 
-void UGOAPAction_MoveToLocation::OnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type Result)
+void UGOAPAction_MoveToLocation::OnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type Result) const
 {
 	UGOAPAgentComponent* Agent = nullptr;
 	for (TPair<UGOAPAgentComponent*, FMobileAgentData>& AgentData : MobileAgents)
